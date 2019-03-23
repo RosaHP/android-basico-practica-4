@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:background="@color/red"
+            android:layout_weight="1"
+            android:text="@string/no_one"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:background="@color/green"
+            android:layout_weight="1"
+            android:text="@string/no_two"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:background="@color/blue"
+            android:layout_weight="1"
+            android:text="@string/no_three"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="@string/no_one"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/no_two"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            tools:layout_marginLeft="100dp"
+            android:layout_marginTop="130dp"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:text="@string/no_three"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+             />
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="@string/no_one"
+                android:textColor="@color/white"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:background="@color/green"
+                android:gravity="center"
+                android:text="@string/no_two"
+                android:textColor="@color/white"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_column="1"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="@string/no_three"
+                android:textColor="@color/white"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
